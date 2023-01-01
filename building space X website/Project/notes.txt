@@ -1,0 +1,7 @@
+
+To learn 📔📚
+
+> after and before psedo classes
+> transform css
+> scaleX css
+> transform-origin

@@ -1,18 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap");
+// font-name : FamilyJen Grotesk
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap");
 
-/* //font-family: 'Familjen Grotesk', sans-serif; */
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid lightskyblue;
 }
-
 body {
-  font-family: "Familjen Grotesk", sans-serif;
-  background-color: #000;
+  font-family: "Familyjen Grotesk", sans-serif;
+  background: #000;
   color: #fff;
 }
 
@@ -24,6 +22,8 @@ a {
 ul {
   list-style: none;
 }
+
+/* Header Navbar */
 
 .main-header {
   position: fixed;
@@ -37,21 +37,95 @@ ul {
   text-transform: uppercase;
   height: 100px;
   padding: 0 30px;
-  /* overflow: hidden; */
 }
 
+/* logo */
 .logo {
   width: 210px;
   height: auto;
-  /* overflow: hidden; */
 }
+
 .logo img {
-  width: 100%;
   display: block;
+  width: 100%;
   height: auto;
 }
 
-.desktop-main-menu{
-    margin-right: 50px;
+/* desktop menu */
+.desktop-main-menu {
+  margin: 50px;
 }
-.desktop
+
+.desktop-main-menu ul {
+  display: flex;
+}
+
+.desktop-main-menu ul li {
+  position: relative;
+  margin-right: 20px;
+  padding-bottom: 2px;
+}
+
+/* menu items bottom border */
+.desktop-main-menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: right center;
+}
+
+.desktop-main-menu ul li a:hover::after{
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.4s;
+
+}
+
+
+/* sections */
+section {
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.section-inner {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+}
+
+.section-inner h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both; // Stop from showing at start
+}
+
+.section-inner a {
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  animation-fill-mode: both; // Stop from showing at start
+}
+
+/* background images */
+.section-a {
+  background-image: url('/img/section-a.webp');
+}
