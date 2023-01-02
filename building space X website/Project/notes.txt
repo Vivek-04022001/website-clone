@@ -6,3 +6,7 @@ To learn 📔📚
 > scaleX css
 > transform-origin css
 > background css
+> traslate css
+> position: relative and absolute
+> keyframs, animation,... see animation section in css
+> svg
