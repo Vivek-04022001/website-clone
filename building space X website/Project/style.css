@@ -1,17 +1,24 @@
 // font-name : FamilyJen Grotesk
 @import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap");
 
+*{
+  /* outline: 1px solid red; */
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+
 body {
   font-family: "Familyjen Grotesk", sans-serif;
   background: #000;
   color: #fff;
+  margin:0;
 }
 
 a {
@@ -181,4 +188,16 @@ section {
 }
 .btn:hover .hover{
   transform: translateY(0);
+}
+
+/* Animation */
+@keyframes fadeInUp{
+  0%{
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
