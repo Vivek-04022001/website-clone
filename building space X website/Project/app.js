@@ -16,7 +16,7 @@ function navToggle() {
 
 function scrollPage() {
   const scrollPos = window.scrollY;
-  console.log(scrollPos);
+  
 
   if (scrollPos > 100 && !scrollStarted) {
     countUp();
@@ -30,7 +30,7 @@ function scrollPage() {
 
 function countUp() {
   counters.forEach((counter) => {
-    counter.innerText = '0';
+    // counter.innerText = '0';
 
     const updateCounter = () => {
       // Get count target
@@ -41,10 +41,13 @@ function countUp() {
       // Create an increment
       const increment = target / 100;
 
+      console.log(increment);
+
       // If counter is less than target, add increment
       if (c < target) {
         // Round up and set counter value
         counter.innerText = `${Math.ceil(c + increment)}`;
+        
 
         setTimeout(updateCounter, 75);
       } else {

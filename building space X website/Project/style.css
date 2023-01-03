@@ -471,4 +471,22 @@ footer ul li a:hover{
     width: 150px;
     margin: auto;
   }
+  .section-inner-center {
+    width: 70%;
+    
+  }
+  .section-inner-center h3{
+    font-size: 75px;
+  }
+
+  /* stats */
+  .stats {
+    flex-direction: column;
+    bottom:
+
+  }
+  .stats div{
+    margin-bottom:20px
+  }
+
 }
