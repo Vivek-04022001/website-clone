@@ -5,7 +5,7 @@ const counters = document.querySelectorAll('.counter');
 let scrollStarted = false;
 
 btn.addEventListener('click', navToggle);
-// document.addEventListener('scroll', scrollPage);
+document.addEventListener('scroll', scrollPage);
 
 function navToggle() {
   btn.classList.toggle('open');
