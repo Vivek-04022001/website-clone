@@ -375,20 +375,21 @@ footer ul li a:hover{
 }
 
 /* stats */
-.stats{
+.stats {
   max-width: 960px;
-  margin:0 auto;
-  display:flex;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  text-transformation: uppercase;
+  text-transform: uppercase;
 }
-.stats div span{
+
+.stats div span {
   font-size: 160px;
 }
 
-.stats div h4{
+.stats div h4 {
   font-size: 24px;
   font-weight: 300;
 }

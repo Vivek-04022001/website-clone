@@ -10,3 +10,4 @@ To learn 📔📚
 > position: relative and absolute
 > keyframs, animation,... see animation section in css
 > svg
+> data target attribute in html
