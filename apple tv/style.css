@@ -1,5 +1,13 @@
+@font-face {
+    font-family: myFirstFont;
+    src:local("D:\working\practice projects\website-clone\apple tv\fonts\Helvetica-Neue-Interface-M3");
+}
+
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: myFirstFont;
+    
 }
