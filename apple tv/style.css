@@ -45,25 +45,40 @@ header {
 }
 
 // sticky-header
-.sticky-header {
-  position: sticky;
+.sticky-header{
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255, 255, 255, 0.72);
-  max-width: 1100px;
-  
+  background-color: rgba(255,255,255,0.72);
+}
+.sticky-header .inner{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 5px;
+}
+.inner ul{
+  list-style:none;
+  display:flex;
+  justify-content:space-evenly;
+}
+.inner ul li{
+  line-height: 2;
+  margin: 7px 15px;
+}
+.inner button{
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  background: #0071e3;
+  color: #fff;
+  border-radius: 980px;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  padding: 4px 11px;
+  border:none;
 }
 
-.sticky-header .title{
-  font-size: 21px;
-    line-height: 1.14286;
-    font-weight: 600;
-    letter-spacing: .011em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    cursor: default;
-    display: block;
-    float: left;
-    margin: 14px 0 -14px;
-    padding: 0;
-    height: 52px;
-    white-space: nowrap;
-}
