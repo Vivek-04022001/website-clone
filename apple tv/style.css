@@ -8,14 +8,19 @@
 /* top-navbar */
 
 header {
-  background: black;
-  color: #f5f5f7;
 }
-nav {
-  width: 80%;
+.main-background {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.main-nav {
+  max-width: 1000px;
+
   margin: auto;
 }
-ul {
+.main-nav ul {
   height: 48px;
   list-style: none;
   display: flex;
@@ -23,19 +28,21 @@ ul {
   flex-wrap: wrap;
   align-items: center;
 }
-li {
+.main-nav li {
   /* margin: 10px 0px; */
   font-size: 12px;
   line-height: 3.6;
   font-weight: 400;
   padding: 0 8px;
 }
-li i {
+.main-nav li i {
   font-size: 18px;
 }
 
-
-
-
-
-
+.secondary-background {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72);
+  width: 100vw;
+}
+.product-nav {
+}
