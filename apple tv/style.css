@@ -1,13 +1,41 @@
-@font-face {
-    font-family: myFirstFont;
-    src:local("D:\working\practice projects\website-clone\apple tv\fonts\Helvetica-Neue-Interface-M3");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial";
+}
+
+/* top-navbar */
+
+header {
+  background: black;
+  color: #f5f5f7;
+}
+nav {
+  width: 80%;
+  margin: auto;
+}
+ul {
+  height: 48px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+li {
+  /* margin: 10px 0px; */
+  font-size: 12px;
+  line-height: 3.6;
+  font-weight: 400;
+  padding: 0 8px;
+}
+li i {
+  font-size: 18px;
 }
 
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: myFirstFont;
-    
-}
+
+
+
+
